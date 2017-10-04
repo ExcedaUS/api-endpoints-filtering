@@ -1,0 +1,20 @@
+<section id="account-traffic">
+        <table ng-repeat="traffic in accounts">
+                <tr>
+                        <th>
+                                Data
+                        </th>
+                        <th>
+                                Times
+                        </th>
+                </tr>
+                <tr class="data-results">
+                        <td>
+                                {{traffic.data}}
+                        </td>
+                        <td id="timestamp">
+                                {{traffic.timestamp | parseDate}}
+                        </td>
+                </tr>
+        </table>
+</section>

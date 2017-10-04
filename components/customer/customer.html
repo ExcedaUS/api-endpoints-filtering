@@ -1,0 +1,18 @@
+<section id="customer-overview">
+    <h2>{{customer.name}}</h2>
+    <table ng-repeat="account in customer.accounts track by $index">
+        <tr>
+            <th>
+                Account #
+            </th>
+        </tr>
+        <tr>
+            <td>
+
+                <button type="submit" ng-click="reRoute()">
+                    {{account}}
+                </button>
+            </td>
+        </tr>
+    </table>
+</section>

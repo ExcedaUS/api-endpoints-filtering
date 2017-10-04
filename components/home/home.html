@@ -1,0 +1,12 @@
+<section id="customers">
+    <div class="search-box">
+        <input ng-model="customer" type="text" placeholder="Name">
+        <button class="btn" type='submit' ng-click="findCustomer(customer)">Go</button>
+        <p>List All Customers or Search by Name</p>
+    </div>
+    <div ng-repeat="customer in customers | filter:customer track by $index">
+        <a ng-href="#!/home/{{customer.id}}">
+            <h2>{{customer.name}}</h2>
+        </a>
+    </div>
+</section>
